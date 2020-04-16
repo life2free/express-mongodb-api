@@ -4,7 +4,7 @@ Build a JSON Api using Express and Mongoose.
 
 ## Description
 
-The Api provides CRUD (including create, read, update, delete ) functionality with RESTful routes. The data which api manipulate is retrieved form the public api ( [News Api](https://newsapi.org/) ) and seed to local mongodb.
+The Api provides CRUD (including create, read, update, delete ) functionality with RESTful routes. The data which api manipulate is retrieved form the public api ( [News Api](https://newsapi.org/) ) and seed to local MongoDB.
 
 ### Technical Utilizes
 
@@ -60,3 +60,15 @@ These instructions will give you guidance how to get a copy of the api and run o
 ```
     show collections  //you will find two collections named "news" and "sources"
 ```
+
+#### Use Api
+
+Once install the dependencies and prepare the data, start the api server with the following command:
+
+```
+node lib/index.js
+```
+
+- There will be a log in your terminal: listening to port 4000
+
+Now, you can use the Api.

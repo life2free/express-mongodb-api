@@ -22,7 +22,7 @@ The Api provides CRUD (including create, read, update, delete ) functionality wi
    - content. Eg: find all news that its content containing the word 'financial'.
    - Date published. Eg: find all news published on "2020-03-31".
 
-2. News API has two endpoints: News and Source. You can find the Document of API [here](https://life2free.github.io/express-mongodb-api/doc/index.html).
+2. News API has two endpoints: News and Source. You can find the Document of API [here](https://life2free.github.io/express-mongodb-api/doc/index.html). The base url of the API on heroku:[BaseUrl]().
 
    - News is the main endpoint, which can be used to manipulate the news.
 
@@ -32,8 +32,8 @@ The Api provides CRUD (including create, read, update, delete ) functionality wi
 
 You can use the API in two way:
 
-1. The API already be published on heroku, it can accessed on [here]() directory.
-2. Clone this project and run on local machine, use the api on local server. These following instructions will give you guidance how to get a copy of the api and run on your local machine.
+1. Use the published API. The API already be published on heroku, it can accessed on [here]().
+2. Clone this project and run on local machine, use the api on local server. The following instructions will give you guidance how to get a copy of the project and run the api on your local machine.
 
 #### Installing
 
@@ -89,4 +89,4 @@ node lib/index.js
 
 - There will be a log in your terminal: listening to port 4000
 
-Now, you can use the Api which is on your local server.
+  Now, you can use the Api which is on your local server.

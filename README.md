@@ -71,4 +71,20 @@ node lib/index.js
 
 - There will be a log in your terminal: listening to port 4000
 
-Now, you can use the Api.
+Now, you can use the Api which is on your local server.
+
+### Api Documentation
+
+1. News API is a simple HTTP REST API for manipulating (create, read, update, delete) news. You can search for news with any combination of the following criteria:
+
+   - author. Eg: find all news that its author containing the word 'catherine'.
+   - title. Eg: find all news that its title containing the word 'financial'.
+   - description. Eg: find all news that its description containing the word 'financial'.
+   - content. Eg: find all news that its content containing the word 'financial'.
+   - Date published. Eg: find all news published on "2020-03-31".
+
+2. News API has two endpoints: News and Source. The Document of API can see [NewsAPI]
+
+   - News is the main endpoint.
+
+   - Source is a minor endpoint that can be used to retrieve the publishers of news.

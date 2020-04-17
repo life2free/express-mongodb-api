@@ -71,7 +71,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Request-Example:",
-          "content": "{\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
+          "content": "{\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\"\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
           "type": "json"
         }
       ]
@@ -88,31 +88,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
+            "type": "String",
             "optional": false,
             "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.name",
-            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -168,7 +147,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n         \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n         \"id\": \"techcrunch\",\n         \"name\": \"TechCrunch\"\n     },\n     \"author\": \"Test Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Test Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -216,31 +195,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
+            "type": "String",
             "optional": false,
             "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.name",
-            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -296,7 +254,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n         \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n         \"id\": \"techcrunch\",\n         \"name\": \"TechCrunch\"\n     },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -424,31 +382,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
+            "type": "String",
             "optional": false,
             "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.name",
-            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -504,7 +441,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n         \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n         \"id\": \"techcrunch\",\n         \"name\": \"TechCrunch\"\n     },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]

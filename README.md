@@ -89,7 +89,7 @@ node lib/index.js
 
 - There will be a log in your terminal: listening to port 4000.
 
-Now, you can use the Api which is on your local server. The entrace address is https://localhost:4000/v1
+Now, you can use the Api which is on your local server. The entrace address is http://localhost:4000/v1
 
 ## Contribute
 

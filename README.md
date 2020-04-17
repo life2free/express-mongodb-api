@@ -11,11 +11,29 @@ The Api provides CRUD (including create, read, update, delete ) functionality wi
 1. NodeJs
 2. Express
 3. MongoDB & Mongoose
-4. Public Api - [News Api](https://newsapi.org/)
+
+### Api Documentation
+
+1. News API is a simple HTTP REST API for manipulating (create, read, update, delete) news. You can search for news with any combination of the following criteria:
+
+   - author. Eg: find all news that its author containing the word 'catherine'.
+   - title. Eg: find all news that its title containing the word 'financial'.
+   - description. Eg: find all news that its description containing the word 'financial'.
+   - content. Eg: find all news that its content containing the word 'financial'.
+   - Date published. Eg: find all news published on "2020-03-31".
+
+2. News API has two endpoints: News and Source. You can find the Document of API [here](https://life2free.github.io/express-mongodb-api/doc/index.html).
+
+   - News is the main endpoint, which can be used to manipulate the news.
+
+   - Source is a minor endpoint, which can be used to manipulate the publishers of news.
 
 ### Use Instructions
 
-These instructions will give you guidance how to get a copy of the api and run on your local machine.
+You can use the API in two way:
+
+1. The API already be published on heroku, it can accessed on [here]() directory.
+2. Clone this project and run on local machine, use the api on local server. These following instructions will give you guidance how to get a copy of the api and run on your local machine.
 
 #### Installing
 
@@ -72,19 +90,3 @@ node lib/index.js
 - There will be a log in your terminal: listening to port 4000
 
 Now, you can use the Api which is on your local server.
-
-### Api Documentation
-
-1. News API is a simple HTTP REST API for manipulating (create, read, update, delete) news. You can search for news with any combination of the following criteria:
-
-   - author. Eg: find all news that its author containing the word 'catherine'.
-   - title. Eg: find all news that its title containing the word 'financial'.
-   - description. Eg: find all news that its description containing the word 'financial'.
-   - content. Eg: find all news that its content containing the word 'financial'.
-   - Date published. Eg: find all news published on "2020-03-31".
-
-2. News API has two endpoints: News and Source. The Document of API can see [NewsAPI]
-
-   - News is the main endpoint.
-
-   - Source is a minor endpoint that can be used to retrieve the publishers of news.

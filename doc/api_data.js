@@ -71,7 +71,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Request-Example:",
-          "content": "{\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\"\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
+          "content": "{\n     \"source\": {\n          \"_id\": \"5e9bc6c9d3382dc254a2bc43\"\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
           "type": "json"
         }
       ]
@@ -90,8 +90,15 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "source",
+            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "source.name",
+            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -147,7 +154,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Test Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n        \"_id\": \"5e9bc6c9d3382dc254a2bc43\",\n        \"name\": \"TechCrunch\"\n    },\n     \"author\": \"Test Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -197,8 +204,15 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "source",
+            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "source.name",
+            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -254,7 +268,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n        \"_id\": \"5e9bc6c9d3382dc254a2bc43\",\n        \"name\": \"TechCrunch\"\n    },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -365,7 +379,7 @@ define({ "api": [
         },
         {
           "title": "Request-Example(The properties of news, in the request body):",
-          "content": "{\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
+          "content": "{\n     \"source\": {\n          \"_id\": \"5e9bc6c9d3382dc254a2bc43\",\n      },\n      \"author\": \"Test Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n }",
           "type": "json"
         }
       ]
@@ -384,8 +398,15 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "source",
+            "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "source.name",
+            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -441,7 +462,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": \"5e97bb9c0761fd34dc5b18b2\",\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18fc\",\n    \"source\": {\n        \"_id\": \"5e9bc6c9d3382dc254a2bc43\",\n        \"name\": \"TechCrunch\"\n    },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -488,24 +509,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
           },
           {
             "group": "Success 200",
@@ -568,7 +575,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response(List of news):",
-          "content": "[\n {\n     \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n          \"id\": \"techcrunch\",\n          \"name\": \"TechCrunch\"\n      },\n      \"author\": \"Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n  }...\n]",
+          "content": "[\n {\n     \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n          \"name\": \"TechCrunch\"\n      },\n      \"author\": \"Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n  }...\n]",
           "type": "json"
         }
       ]
@@ -609,24 +616,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
           },
           {
             "group": "Success 200",
@@ -689,7 +682,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response:",
-          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n    \"source\": {\n         \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n         \"id\": \"techcrunch\",\n         \"name\": \"TechCrunch\"\n     },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
+          "content": "{\n    \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n    \"source\": {\n         \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n         \"name\": \"TechCrunch\"\n     },\n     \"author\": \"Catherine Shu\",\n     \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n     \"description\": \"Grab announced today that it has hired Peter ...\",\n     \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n     \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n     \"date\": \"2020-04-01\",\n     \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n}",
           "type": "json"
         }
       ]
@@ -718,15 +711,22 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/newss/query/q?",
-    "title": "Query news by conditions",
-    "description": "<p>Get list of news which match the query string. When using this api to get list of news, the query string should after the question mark (?). If there is no query string after ?, it meaning query news without condition, then will get all of the news. If there is query string, then will get the list of news which match all of the conditions. If the query parameters key is: author, title,description or content, the api will conduct fuzzyquery and ignore case with these parameters value. i.e: thequery string is: ?author=cather&amp;title=finan , then all of the news which its author includes &quot;cather&quot; and its title includes &quot;finan&quot; match the conditions, and ignorecase the these parameters value. The base url of api on heroku: https://express-news-api.herokuapp.com/v1</p>",
+    "url": "/newss/search/keywords",
+    "title": "Search news by conditions",
+    "description": "<p>Get list of news which match the query string. When using this api to get list of news, the query string should after the question mark (?). If there is no query string after ?, it meaning query news without condition, then will get all of the news. If there is query string, then will get the list of news which match all of the conditions. The base url of api on heroku: https://express-news-api.herokuapp.com/v1</p>",
     "name": "QueryNews",
     "group": "News",
     "version": "1.0.0",
     "parameter": {
       "fields": {
         "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "q",
+            "description": "<p>(Optional). Keywords or phrases to search for in the title, author, description, content or the source name. the api will conduct fuzzyquery and ignore case with keywords or phrases. i.e: the keywords is: ?q=cather , then all of the news which one of the properties (title, author, description, content or the source name) includes &quot;cather&quot; match the conditions, and ignorecase the keywords or phrases.</p>"
+          },
           {
             "group": "Parameter",
             "type": "String",
@@ -738,36 +738,8 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
-            "field": "source",
+            "field": "source._id",
             "description": "<p>(Optional). The source unique ID, refer to the Source collection, which is a 24-bit hash string.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "author",
-            "description": "<p>(Optional). The author of the news.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "title",
-            "description": "<p>(Optional). The title of the news.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "description",
-            "description": "<p>(Optional). The description of the news.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "content",
-            "description": "<p>(Optional). The content of the news.</p>"
           },
           {
             "group": "Parameter",
@@ -781,7 +753,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Request-Example:",
-          "content": "/newss/query/q?author=cather&title=Fina",
+          "content": "/newss/search/keywords?q=cather&date=2020-04-01",
           "type": "json"
         }
       ]
@@ -798,24 +770,10 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "source",
-            "description": "<p>The source of the news.</p>"
-          },
-          {
-            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "source._id",
             "description": "<p>The source unique ID, refer to the Source collection.</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "source.id",
-            "description": "<p>The id of the news source.</p>"
           },
           {
             "group": "Success 200",
@@ -878,7 +836,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Success-Response(List of news):",
-          "content": "[\n {\n     \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n          \"id\": \"techcrunch\",\n          \"name\": \"TechCrunch\"\n      },\n      \"author\": \"Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n  }...\n]",
+          "content": "[\n {\n     \"_id\": \"5e97bb9c0761fd34dc5b18cc\",\n     \"source\": {\n          \"_id\": \"5e97bb9c0761fd34dc5b18b2\",\n          \"name\": \"TechCrunch\"\n      },\n      \"author\": \"Catherine Shu\",\n      \"title\": \"Grab hires Peter Oey as its chief financial officer\",\n      \"description\": \"Grab announced today that it has hired Peter ...\",\n      \"url\": \"http://techcrunch.com/2020/04/01/grab-hires-peter-oey-as-its-chief-financial-officer/\",\n      \"imageUrl\": \"https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-1192338076.jpg?w=600\",\n      \"date\": \"2020-04-01\",\n      \"content\": \"Grab announced today that it has hired Peter Oey ...\"\n  }...\n]",
           "type": "json"
         }
       ]
@@ -1070,15 +1028,15 @@ define({ "api": [
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "id",
-            "description": "<p>The id of the source.</p>"
+            "field": "source._id",
+            "description": "<p>The source unique ID, refer to the Source collection.</p>"
           },
           {
             "group": "Success 200",
             "type": "String",
             "optional": false,
-            "field": "name",
-            "description": "<p>The name of the source.</p>"
+            "field": "source.name",
+            "description": "<p>The name of news source.</p>"
           },
           {
             "group": "Success 200",
@@ -1507,9 +1465,9 @@ define({ "api": [
   },
   {
     "type": "get",
-    "url": "/sources/query/q?",
-    "title": "Query source by conditions",
-    "description": "<p>Get list of source which match the query string. When using this api to get list of source, the query string should after the question mark (?). If there is no query string after ?, it meaning query source without condition, then will get all of the source. If there is query string, then will get the list of source which match all of the conditions. If the query parameters key is: name or description, the api will conduct fuzzyquery and ignore case with these parameters value. i.e: the query string is: ?name=blast&amp;description=descub , then all of the source which its name includes &quot;blast&quot; and its description includes &quot;descub&quot; match the conditions, and ignorecase the these parameters value. The base url of api on heroku: https://express-news-api.herokuapp.com/v1</p>",
+    "url": "/sources/search/keywords",
+    "title": "Search source by conditions",
+    "description": "<p>Get list of source which match the query string. When using this api to get list of source, the query string should after the question mark (?). If there is no query string after ?, it meaning query source without condition, then will get all of the source. If there is query string, then will get the list of source which match all of the conditions. The base url of api on heroku: https://express-news-api.herokuapp.com/v1</p>",
     "name": "QuerySource",
     "group": "Source",
     "version": "1.0.0",
@@ -1520,29 +1478,15 @@ define({ "api": [
             "group": "Parameter",
             "type": "String",
             "optional": false,
+            "field": "q",
+            "description": "<p>(Optional). Keywords or phrases to search for in the name or description of source. the api will conduct fuzzyquery and ignore case with keywords or phrases. i.e: the keywords is: ?q=blast , then all of the source which one of the name or description includes &quot;blast&quot; match the conditions, and ignorecase the keywords or phrases.</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
             "field": "_id",
             "description": "<p>(Optional). The news unique ID, which is a 24-bit hash string.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "id",
-            "description": "<p>(Optional).  The id of the source.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "name",
-            "description": "<p>(Optional).  The name of the source.</p>"
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "description",
-            "description": "<p>(Optional).  The description of the source.</p>"
           },
           {
             "group": "Parameter",
@@ -1570,7 +1514,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Request-Example:",
-          "content": "/sources/query/q?name=blast&description=descub",
+          "content": "/sources/search/keywords?q=blast&country=br",
           "type": "json"
         }
       ]

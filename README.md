@@ -1,6 +1,6 @@
 # JSON Api
 
-Build a JSON Api using Express and Mongoose.
+Built RESTful APIs which search, view, create, update and delete news, implemented with Express and MongoDB.
 
 ## Description
 
